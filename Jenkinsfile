@@ -49,7 +49,7 @@ agent {
         }
         stage('Archieve Artifacts' {
             steps {
-                archieveArtifacts '**/*'jar'
+                archieveArtifacts '**/*.jar'
             }
         }
         stage('Email Notification') {

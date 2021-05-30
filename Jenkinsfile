@@ -38,7 +38,7 @@ agent {
                 sh 'docker tag sa-webapp shikshagarg/sa-webapp'  
                 sh 'docker tag sa-logic shikshagarg/sa-logic'
                 sh 'docker push shikshagarg/sa-frontend'
-                sh 'docker push shikshagarg/sa-wepapp'
+                sh 'docker push shikshagarg/sa-webapp'
                 sh 'docker push shikshagarg/sa-logic'
              }
         }

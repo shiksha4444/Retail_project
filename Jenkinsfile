@@ -19,17 +19,17 @@ agent {
         }
         stage ('Build Docker sa-frontend') {
             steps {
-                sh 'cd ${WORKSPACE}/sa-frontend && docker build -t sa-frontend'
+                sh 'cd ${WORKSPACE}/sa-frontend && docker build -t sa-frontend .'
             }
         }
         stage ('Build Docker sa-webapp') {
             steps {
-                sh 'cd ${WORKSPACE}/sa-webapp &&  docker build -t sa-webapp'
+                sh 'cd ${WORKSPACE}/sa-webapp &&  docker build -t sa-webapp .'
             }
         }
         stage ('Build Docker sa-logic') {
             steps {
-                sh 'cd ${WORKSPACE}/sa-logic &&  docker build -t sa-logic'
+                sh 'cd ${WORKSPACE}/sa-logic &&  docker build -t sa-logic .'
             }
         }
         stage ('Push to registry') {
